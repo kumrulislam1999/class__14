@@ -1,0 +1,688 @@
+/* Start Common CSS Here */
+:root {
+    --primary_font: 'Poppins', sans-serif;
+    --secondary_font: 'PT Sans', sans-serif;
+    --primary_color: #353535;
+    --secondary_color: #7A7A7A;
+    --hover_color: #ffcc00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary_font);
+
+}
+
+.container {
+    width: 1114px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary_color);
+}
+
+ul {
+    list-style: none;
+}
+
+.w_50 {
+    width: 50%;
+}
+
+.w_60 {
+    width: 60%;
+}
+
+.w_40 {
+    width: 40%;
+}
+
+.w_33 {
+    width: calc((100% /3) - 15px);
+}
+
+.btn {
+    color: var(--primary_color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    padding: 18px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.btn_h:hover {
+    color: #ffffff;
+    background-color: var(--hover_color);
+    border-color: transparent;
+}
+
+/* Start Common CSS Here */
+
+/* Start Section Common CSS Style Here */
+.section_info h2 {
+    color: var(--primary_color);
+    font-size: 50px;
+    font-family: var(--secondary_font);
+    line-height: 67.7px;
+    font-weight: 700;
+}
+
+.section_info h3 {
+    color: var(--primary_color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 43.2px;
+}
+
+.section_info h4 {
+    color: var(--primary_color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32.4px;
+}
+
+.section_info h5 {
+    color: var(--primary_color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 34.2px;
+}
+
+.section_info h6 {
+    color: var(--secondary_color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.section_info p {
+    color: var(--primary_color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+/* Start Section Common CSS Style Here */
+
+/* Start Header Section CSS Style Here */
+#headerSection {}
+
+#headerSection .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerSection .nav_bar {
+    width: 60%;
+}
+
+#headerSection a {
+    padding: 18px 22px 5px;
+    color: var(--primary_color);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+#headerSection li {
+    position: relative;
+}
+
+#headerSection a::after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: rgb(92, 182, 255);
+
+
+}
+
+#headerSection a:hover::after {
+    width: 100%;
+    transition: .4s;
+}
+
+#headerSection a::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: rgb(66, 209, 245);
+
+
+}
+
+#headerSection a:hover::before {
+    width: 100%;
+    transition: .4s;
+}
+
+/* End Header Section CSS Style Here */
+
+/* Start Bannar Section CSS Style Here */
+#bannarSection {
+
+    padding: 82px 0;
+}
+
+#bannarSection .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bannarSection .container {
+    position: relative;
+}
+
+#bannarSection .section_info {
+    padding-top: 40px;
+    padding-right: 190px;
+}
+
+#bannarSection ul.row {
+    justify-content: start;
+}
+
+#bannarSection h6 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+#bannarSection h1 {
+    font-size: 64px;
+    font-family: var(--secondary_font);
+    font-weight: 700;
+    color: var(--primary_color);
+    padding-bottom: 25px;
+}
+
+#bannarSection p {
+    padding-bottom: 10px;
+}
+
+#bannarSection .section_info>a {
+    margin: 66px 0;
+    margin-right: 40px;
+}
+
+#bannarSection .section_info>a>i {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+
+#bannarSection ul>li {
+    margin-right: 15px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+#bannarSection ul>li i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#bannarSection svg {
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+/* End Bannar Section CSS Style Here */
+
+/* Start About Section CSS Style Here */
+#aboutSection .about_section_bg {
+    background: linear-gradient(130deg, #FC0 0%, #FAFFCB 100%, #FAFFCB 100%);
+}
+
+#aboutSection .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#aboutSection .position {
+    position: relative;
+}
+
+#aboutSection .position>img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#aboutSection .position a {
+    padding: 17px 43px;
+}
+
+#aboutSection .section_info p {
+    padding: 26px 0 45px;
+}
+
+#aboutSection .second_row {
+    padding: 151px 0 161px;
+}
+
+#aboutSection .second_row .item {
+    text-align: center;
+    padding: 39px 47px 57px;
+}
+
+#aboutSection .second_row .item img {
+    margin: auto;
+}
+
+#aboutSection .second_row .item h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 39px;
+    padding: 18px 0 14px;
+}
+
+#aboutSection .second_row .item p {
+    font-size: 16px;
+    color: var(--secondary_color);
+    line-height: 30px;
+}
+
+/* End About Section CSS Style Here */
+
+
+/* Start Branding Section Here */
+#brandingSection .row {
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(130deg, #FC0 0%, #FFF5CB 100%);
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brandingSection .position .section_info {
+    padding: 83px 65px 75px 0;
+    width: 40%;
+    position: relative;
+
+}
+
+#brandingSection .position>img {
+    position: absolute;
+    top: -33px;
+    right: 64px;
+}
+
+#brandingSection .position {
+    position: relative;
+}
+
+#brandingSection p {
+    padding: 21px 0 35px;
+}
+
+#brandingSection .position .section_info>img {
+    position: absolute;
+    right: 213px;
+    bottom: 99px;
+}
+
+/* End Branding Section Here */
+
+
+/* Start Help Section Here */
+#helpSection {
+    padding: 147px 0 225px;
+}
+
+#helpSection .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#helpSection .section_info .row {
+    justify-content: start;
+}
+
+#helpSection .item2 {
+    text-align: right;
+}
+
+#helpSection .item2 .row {
+    justify-content: end;
+}
+
+#helpSection .item1 i {
+    margin-right: 18px;
+    color: #ffffff;
+    font-size: 30px;
+    width: 58px;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+
+#helpSection .item1 .innerItem:nth-child(2) {
+    margin: 62px 0;
+}
+
+#helpSection .item1 .innerItem:nth-child(1) i {
+    background-color: #55852F;
+}
+
+#helpSection .item1 .innerItem:nth-child(2) i {
+    background-color: #FEDC2A;
+
+}
+
+#helpSection .item1 .innerItem:nth-child(3) i {
+    background-color: #FF8D3A;
+}
+
+#helpSection .item2>p {
+    padding: 26px 0 32px;
+}
+
+#helpSection .item2 .inneritem_info {
+    text-align: left;
+    margin-left: 67px;
+}
+
+#helpSection .item2 .inneritem_info h3 {
+    font-size: 40px;
+    font-family: var(--secondary_font);
+    font-weight: 700;
+}
+
+#helpSection .item2 .inneritem_info p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#helpSection .item1 .inneritem_info p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+/* End Help Section Here */
+
+/* Start Experience Section Here */
+
+
+#experienceSection .innerSection_info {
+    padding: 80px 0;
+}
+
+#experienceSection .row {
+    justify-content: space-between;
+    align-items: start;
+}
+
+#experienceSection .section_info .innerItem:last-child::before {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: -100px;
+    z-index: 6;
+    content: '';
+    border-left: 3px dashed var(--secondary_color);
+    transition: 0.5s;
+}
+
+#experienceSection .section_info .innerItem:last-child::after {
+    position: absolute;
+    top: 0;
+    height: 42px;
+    width: 42px;
+    left: -124px;
+    z-index: 7;
+    content: '';
+    background-color: #ffffff;
+    border: 3px dashed var(--secondary_color);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#experienceSection .innerItem {
+    padding: 22px 0;
+}
+
+#experienceSection .item .innerItem:last-child {
+    position: relative;
+}
+
+#experienceSection .item .innerItem:last-child h3::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: -108px;
+    z-index: 8;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+#experienceSection .item:nth-child(1) .innerItem:last-child:hover h3::before {
+    background-color: #52AB70;
+}
+
+#experienceSection .item:nth-child(2) .innerItem:last-child:hover h3::before {
+    background-color: #F17676;
+}
+
+#experienceSection .item:nth-child(3) .innerItem:last-child:hover h3::before {
+    background-color: #FFD233;
+}
+
+
+#experienceSection h2 {
+    text-align: center;
+}
+
+#experienceSection .innerItem:first-child p {
+    font-weight: 500;
+}
+
+#experienceSection p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #7A7A7A;
+    padding-top: 16px;
+}
+
+/* End Experience Section Here */
+
+/* Start Expert Section Here */
+#expertSection {
+    padding: 289px 0 146px;
+}
+
+#expertSection .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#expertSection .item1 {
+    padding-right: 145px;
+}
+
+#expertSection .item1 h2 {
+    padding-bottom: 49px;
+}
+
+#expertSection .item1 p {
+    text-align: justify;
+    line-height: 40px;
+    color: var(--secondary_color);
+    padding: 10px 0;
+}
+
+#expertSection .item1 a {
+    margin: 39px 0;
+}
+
+#expertSection .item2 a {
+    display: inline-block;
+    padding: 16px 65px 15px 64px;
+    font-size: 18px;
+    color: var(--primary_color);
+    text-align: center;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 51px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
+#expertSection .item2 a:hover {
+    border-color: var(--primary_color);
+    background-color: #ffffff;
+}
+
+#expertSection .item2 .innerItem:first-child {
+    margin: 0;
+}
+
+#expertSection .item2 .innerItem {
+    margin-bottom: 44px;
+}
+
+#expertSection .item2 .innerItem progress {
+    width: 100%;
+}
+
+#expertSection .item2 .innerItem:nth-child(2) progress {
+    accent-color: #F16500;
+}
+
+#expertSection .item2 .innerItem:nth-child(3) progress {
+    accent-color: #03249B;
+}
+
+#expertSection .item2 .innerItem:nth-child(4) progress {
+    accent-color: #700D60;
+}
+
+#expertSection .item2 .innerItem:nth-child(5) progress {
+    accent-color: #234BDA;
+}
+
+#expertSection .item2 .innerItem:nth-child(2) h4 {
+    color: #F16500;
+}
+
+#expertSection .item2 .innerItem:nth-child(3) h4 {
+    color: #03249B;
+}
+
+#expertSection .item2 .innerItem:nth-child(4) h4 {
+    color: #700D60;
+}
+
+#expertSection .item2 .innerItem:nth-child(5) h4 {
+    color: #234BDA;
+}
+
+/* End Expert Section Here */
+
+/* Start Service Section */
+#serviceSection {
+    padding: 73px 0 103px;
+    background-color: #FFF7D5;
+    text-align: center;
+}
+
+#serviceSection .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#serviceSection .item {
+    padding: 32px 49px 79px;
+    margin-top: 73px;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+#serviceSection .item img {
+    margin: 0 auto;
+}
+
+#serviceSection .item h3 {
+    padding: 25px 0;
+}
+
+#serviceSection .item p {
+    color: var(--secondary_color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+#serviceSection .item:hover {
+    padding: 37px 49px 79px;
+    background-color: var(--hover_color);
+}
+
+/* End Service Section CSS Style Here */
+
+
+
+/* Start Feedback Section CSS Style Here */
+#feedbackSection {
+    padding: 92px 0 60px;
+}
+
+#feedbackSection .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#feedbackSection .innerSection_info {
+    padding-top: 63px;
+}
+
+#feedbackSection .innerSection_info p {
+    padding-left: 99px;
+    padding-bottom: 28px;
+}
+
+#feedbackSection .section_info h3,
+#feedbackSection .section_info h6 {
+    padding-left: 149px;
+}
+
+/* End Feedback Section CSS Style Here */
